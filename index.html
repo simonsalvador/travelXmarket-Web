@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/mediasqueries.css" />
+
+    <title>Integrador JS</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <header id="header">
+        <nav>
+          <div class="navbar__logo-img">
+            <img src="./assets/nav-icons/logo.png" alt="logo" />
+          </div>
+          <div class="navbar__home-icon">
+            <div class="home-icon-container">
+              <a href="./login.html"
+                ><img src="./assets/nav-icons/user.png" alt="home-icon"
+              /></a>
+            </div>
+            <div class="navbar__cart">
+              <img
+                class="cart-menu"
+                src="./assets/nav-icons/shopping-cart.png"
+                alt="cart-icon"
+              />
+            </div>
+            <div class="wallet">
+              <span class="enableEthereumButton showAccount">
+                <img
+                  src="./assets/nav-icons/aplicacion-wallet-pass.png"
+                  alt="wallet-icon"
+                />
+              </span>
+            </div>
+          </div>
+
+          <!-- Menu Hamburguesa -->
+          <div class="menu-btn nav-toggle">
+            <div></div>
+          </div>
+        </nav>
+      </header>
+
+      <ul class="nav-menu">
+        <li><a class="nav-menu-item active-menu-item" href="#">Home</a></li>
+        <li>
+          <a class="nav-menu-item" data-nav="header" href="./iuser.html"
+            >Mi cuenta</a
+          >
+        </li>
+        <li>
+          <a class="nav-menu-item" data-nav="categorias" href="#ver-categorias"
+            >Categorias</a
+          >
+        </li>
+      </ul>
+
+      <!-- Carrito -->
+      <div class="cart">
+        <span class="close" id="close">x</span>
+        <h2>Tus TicketX</h2>
+        <div class="cart-container"></div>
+        <div class="cart-taxes">
+          <div class="sub">
+            <p>Total + Impuestos:</p>
+            <span class="taxes">0.00USDT</span>
+          </div>
+        </div>
+        <span class="divider"></span>
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total">0.00USDT</span>
+        </div>
+        <div class="btn-cart">
+          <button class="btn-buy" >Comprar</button>
+          <button class="btn-delete">Vaciar carrito</button>
+        </div>
+
+        <div class="show-more">
+          <a class="cart-link" href="#categorias">Ver más destinos</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+
+      <!--hero section-->
+      <section class="container-info">
+        <div class="info">
+          <h1>
+            Tu ticket aéreo ahora es un <span class="nft">NFTicket.</span>
+          </h1>
+          <p>Busca, compra y vende tus TicketX.</p>
+          <a href="#ver-categorias"><button>Ver más</button></a>
+        </div>
+      </section>
+
+      <!-- info section-->
+      <section id="info">
+        <h2>Sé parte de un mundo más flexible y descentalizado</h2>
+        <div class="info-cards-container">
+          <div class="info-card">
+            <img src="./assets/info-icons/bitcoin.svg" alt="Icono Bitcoin" />
+            <h3>Rápido y fácil</h3>
+            <p>
+              Comprá tu ticket aéreo con la facilidad de pagarlo con tus cryptos
+              desde tu wallet.
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/info-icons/gift-solid.svg" alt="Icono Gift" />
+            <h3>Regálalo</h3>
+            <p>
+              Transferí tu TicketX a quien quieras, cuando quieras, simple y sin
+              intemediarios.
+            </p>
+          </div>
+          <div class="info-card">
+            <img
+              src="./assets/info-icons/money-bill-transfer-solid.svg"
+              alt="Icono Money"
+            />
+            <h3>Véndelo</h3>
+            <p>Subasta tus vuelos en fechas especiales y ganá!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categorias -->
+      <div id="ver-categorias"></div>
+
+      <section class="container-categories" id="categorias">
+        <h2>Categorias</h2>
+        <div class="container-cards-category">
+          <button class="category active">TOP</button>
+          <button class="category" data-category="internacionales">
+            Internacionales
+          </button>
+          <button class="category" data-category="nacionales">
+            Nacionales
+          </button>
+        </div>
+
+        <div class="container-lugares">
+          <h2 id="title">TOP</h2>
+          <div class="container-cards-lugares"></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="about">
+        <div class="footer-text">
+          <a href="#">Términos de Uso</a>
+          <a href="https://linkedin.com/in/simonsalvador" target="_blank"
+            >Trabajá con Nosotros</a
+          >
+          <a href="https://github.com/simonsalvador" target="_blank"
+            >Soporte</a
+          >
+        </div>
+        <div class="nosotros">
+          <p>Hecho por <span class="text">Simon Salvador</span></p>
+        </div>
+      </footer>
+      <div class="add-modal"></div>
+    </main>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
